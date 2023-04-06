@@ -644,7 +644,6 @@ public class EmployeeBonus extends javax.swing.JFrame {
 
     private void tblDataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDataMouseClicked
         btnAdd.setEnabled(false);
-        txtId.setEditable(false);
         int row = tblData.getSelectedRow();
         if (row >= 0) {
             String id = (String) tblData.getValueAt(row, 0);
