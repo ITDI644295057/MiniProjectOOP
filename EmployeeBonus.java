@@ -646,12 +646,12 @@ public class EmployeeBonus extends javax.swing.JFrame {
         btnAdd.setEnabled(false);
         int row = tblData.getSelectedRow();
         if (row >= 0) {
-            String id = (String) tblData.getValueAt(row, 0);
-            String name = (String) tblData.getValueAt(row, 1);
-            String surname = (String) tblData.getValueAt(row, 2);
-            String namePosi = (String) tblData.getValueAt(row, 3);
-            String salary = (String) tblData.getValueAt(row, 4);
-            String bonus = (String) tblData.getValueAt(row, 5);
+            String id = tblData.getValueAt(row, 0).toString();
+            String name = tblData.getValueAt(row, 1).toString();
+            String surname = tblData.getValueAt(row, 2).toString();
+            String namePosi = tblData.getValueAt(row, 3).toString();
+            String salary = tblData.getValueAt(row, 4).toString();
+            String bonus = tblData.getValueAt(row, 5).toString();
             txtId.setText(id);
             txtName.setText(name);
             txtSurname.setText(surname);
