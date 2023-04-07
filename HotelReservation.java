@@ -618,13 +618,13 @@ public class HotelReservation extends javax.swing.JFrame {
         btnAdd.setEnabled(false);
         int row = tblData.getSelectedRow();
         if (row >= 0) {
-            String id = (String) tblData.getValueAt(row, 0);
-            String name = (String) tblData.getValueAt(row, 1);
-            String surname = (String) tblData.getValueAt(row, 2);
-            String roomType = (String) tblData.getValueAt(row, 3);
-            String period = (String) tblData.getValueAt(row, 4);
-            String days = (String) tblData.getValueAt(row, 5);
-            String totalPrice = (String) tblData.getValueAt(row, 6);
+            String id = tblData.getValueAt(row, 0).toString();
+            String name = tblData.getValueAt(row, 1).toString();
+            String surname = tblData.getValueAt(row, 2).toString();
+            String roomType = (String) tblData.getValueAt(row, 3).toString();
+            String period = tblData.getValueAt(row, 4).toString();
+            String days = tblData.getValueAt(row, 5).toString();
+            String totalPrice = tblData.getValueAt(row, 6).toString();
             txtId.setText(id);
             txtName.setText(name);
             txtSurname.setText(surname);
